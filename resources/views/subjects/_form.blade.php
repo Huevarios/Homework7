@@ -1,0 +1,3 @@
+<div class="form-group"><label for="name">Subject Name</label><input id="name" name="name" class="form-control" required maxlength="255" value="{{ old('name', isset($subject) ? $subject->name : '') }}" placeholder="e.g. Web Design"></div>
+<div class="form-group"><label for="description">Description (optional)</label><textarea id="description" name="description" class="form-control" rows="3">{{ old('description', isset($subject) ? $subject->description : '') }}</textarea></div>
+<button type="submit" class="btn btn-success">Save</button> <a class="btn btn-secondary" href="{{ route('subjects.index') }}">Cancel</a>
